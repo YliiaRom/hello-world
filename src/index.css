@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#root {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  background: black;
+  color: white;
+}
