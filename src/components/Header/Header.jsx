@@ -41,7 +41,7 @@ function Header() {
         className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20"
       >
         {/* logo-header */}
-        <LogoHeader logoContent={"M"} logoTitle="Yullia code" />
+        <LogoHeader logoContent={"W"} logoTitle="Hello World" />
 
         {/* Desctop Navigation */}
         <HeaderNavDesktop list={headerNav} contentNavItem={"prop"} />
@@ -51,7 +51,7 @@ function Header() {
 
         {/* header button = OPEN MODAL*/}
         <HeaderModalButton
-          btnText={"contact form"}
+          btnText={"contact"}
           openContactForm={openContactForm}
         />
 
@@ -72,77 +72,7 @@ function Header() {
         toggleMenu={toggleMenu}
         openContactForm={openContactForm}
       />
-      {/* <motion.div
-        initial={{ opacity: 0, height: 0 }}
-        animate={{
-          opacity: isOpen ? 1 : 0,
-          height: isOpen ? "auto" : 0,
-        }}
-        transition={{ duration: 0.5 }}
-        className="md:hidden overflow-hidden bg-gray-800 dark:bg-gray-900 shadow-lg px-4 py-5 space-e-5"
-      >
-        <nav className="flex flex-col space-e-3">
-          {["Home", "About", "Projects", "Experience", "Contact"].map(
-            (item) => (
-              <a
-                onClick={toggleMenu}
-                key={item}
-                href="#"
-                className="text-gray-300 font-medium py-2"
-              >
-                {item}
-              </a>
-            )
-          )}
-        </nav>
-      
 
-        <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-          <div className="flex space-x-5">
-            <a href="#">
-              <FiGithub className="h-5 w-5 text-gray-300" />
-            </a>
-            <a href="#">
-              <FiTwitter className="h-5 w-5 text-gray-300" />
-            </a>
-            <a href="#">
-              <FiLinkedin className="h-5 w-5 text-gray-300" />
-            </a>
-          </div>
-          <button
-            onClick={() => {
-              toggleMenu();
-              openContactForm();
-            }}
-            className="mt-4 block w-full px-4 py-4 rounded-lg bg-gradient-to-r from-violet-600 to-violet-400 font-bold"
-          >
-            Contact me
-          </button>
-        </div>
-      </motion.div> */}
-      {/* contact form */}
-      {/* {contactFormIsOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          className="fixed inset bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-        >
-          <div className="bg-gray-600 dark:bg-gray-800 rounded-xl shadow-xl max-w-md w-full  p-6">
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-2xl font-bold  text-gray-300">
-                Get in Touch
-              </h2>
-              <button onClick={() => closeContactForm()}>
-                <FiX className="w-5 h-5 text-gray-300 font-extrabold" />
-              </button>
-            </div>
-      
-            <ContactInputForm />
-          </div>
-        </motion.div>
-      )} */}
       {contactFormIsOpen && (
         <ContactFormWrap
           titleContent="Get in Touch"

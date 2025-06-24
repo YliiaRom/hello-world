@@ -1,12 +1,18 @@
 import { useState } from "react";
 import Header from "../src/components/Header/Header";
 import "./App.css";
+import HeroSection from "./components/HeroSection/HeroSection";
+import CustomCursor from "./components/CustomCursor/CustomCursor";
+// import ButtonSection from "./components/ButtonSection/ButtonSection";
+import Discount from "./components/Discounts/Discounts";
 
 function App() {
   return (
     <>
-      <div className="text-2xl text-blue-500 font-bold">Hello Tailwind!</div>
       <Header />
+      <HeroSection />
+      <CustomCursor />
+      <Discount />
     </>
   );
 }
