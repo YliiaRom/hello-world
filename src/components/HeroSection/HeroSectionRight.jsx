@@ -17,9 +17,9 @@ function HeroSectionRight() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="absolute xl:right-[-28%] right-0 bottom-[-10%] lg:bottom-[-10%] sm:bottom-[-40%] flex justify-center items-center w-full h-full "
+        className="absolute xl:right-[-28%] right-0 bottom-[-10%] lg:bottom-[-10%] flex  justify-center items-center w-full h-full "
       >
-        <div className="max-w-[900px] w-full aspect-[3/4] flex justify-center items-center">
+        <div className="max-w-[900px] w-full aspect-[3/4] flex justify-center items-center border border-violet-200">
           <img
             src={boy02}
             alt="boy02"
