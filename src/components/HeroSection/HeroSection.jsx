@@ -12,7 +12,7 @@ function HeroSection() {
       <HeroSectionLeft />
 
       {/* right section */}
-      <HeroSectionRight />
+      {/* <HeroSectionRight /> */}
     </section>
   );
 }
